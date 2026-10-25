@@ -8,6 +8,15 @@ A reproducible simulation baseline for language-directed two-object robotic gras
 
 Supported commands in the current demo/evaluation are `left`, `right`, `purple`, and `blue`.
 
+## Demo
+
+| Spatial command | Color command after position swap |
+| --- | --- |
+| `left` selects and grasps the purple object | `blue` selects and grasps the blue object |
+| ![Left-command grasp](media/demo_left_default.gif) | ![Blue-command grasp with swapped layout](media/demo_blue_swapped.gif) |
+
+Both animations are recorded directly from MuJoCo runs using the same perception, routing, and staged grasp-control logic as the evaluation pipeline.
+
 ## Results
 
 | Evaluation | Detection | Routing | Grasp |
@@ -25,6 +34,7 @@ During VLA diagnosis, prompt changes such as left/right and purple/blue did not 
 
 - `envs/` - MuJoCo/Gymnasium environment and robot assets.
 - `scripts/demo_language_grasp.py` - single-command demo entry point.
+- `scripts/record_language_grasp.py` - records a real MuJoCo grasp run as a GIF.
 - `scripts/evaluate_fixed_positions.py` - 36-trial controlled evaluation.
 - `scripts/evaluate_random_positions.py` - 50-trial unseen-Y evaluation.
 - `results/` - CSV results from the reported evaluations.
@@ -59,5 +69,4 @@ The public baseline currently randomizes object position along Y while keeping X
 ## Third-party assets
 
 The Franka Panda and Robotiq 2F-85 model assets are derived from Google DeepMind MuJoCo Menagerie. Panda is distributed under Apache-2.0 and Robotiq 2F-85 under BSD-2-Clause. Exact upstream license texts are retained beside the corresponding assets. See THIRD_PARTY_NOTICES.md.
-
 

@@ -1,4 +1,4 @@
-# Third-Party Notices
+﻿# Third-Party Notices
 
 This repository uses robot model assets derived from the Google DeepMind MuJoCo Menagerie.
 
@@ -6,8 +6,9 @@ This repository uses robot model assets derived from the Google DeepMind MuJoCo 
 - Robotiq 2F-85 assets: MuJoCo Menagerie `robotiq_2f85`, BSD-2-Clause.
 - `gym-hil`: Hugging Face Human-in-the-Loop reinforcement-learning environments; used as a runtime dependency.
 
-Before public redistribution, retain the exact upstream license texts for any third-party assets included in this repository. The source working directory did not contain per-asset LICENSE files, so this public staging repository intentionally records provenance but should not be published until those exact license files are added from the upstream projects.
+The exact upstream license texts for the bundled Franka Emika Panda and Robotiq 2F-85 assets are retained beside their corresponding asset directories in this repository.
 
 Upstream projects:
 - Google DeepMind MuJoCo Menagerie
 - Hugging Face gym-hil
+
